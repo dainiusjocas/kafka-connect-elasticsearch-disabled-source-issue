@@ -1,4 +1,5 @@
-# kafka-connect-elasticsearch-empty-document-issue
+# 
+kafka-connect-elasticsearch-disabled-source-issue 
 
 There is an issue with the Kafka Connect Elasticsearch sink connector, when target index configuration is managed with the index templates and the template specifies that index has `_source` disabled.
 
