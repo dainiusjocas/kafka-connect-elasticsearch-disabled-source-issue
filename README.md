@@ -84,3 +84,4 @@ Get status of the connector, task should be failed
   "type": "sink"
 }
 ```
+UPDATE: It turns out that the issue is the combination of the connectors `write.method` is `upsert` and the fact that the Elasticsearch index configuration has the `_source` disabled: update in Elasticsearch requires the `_source` to be present as is stated in the error message: `"reason\":\"[_doc][0]: document source missing\"`.
